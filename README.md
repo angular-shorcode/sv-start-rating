@@ -3,9 +3,9 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![]
 
 
-###Demo
+##Demo
 http://localhost:4200/home/rating
-###Installation 
+##Installation 
 ***
 Install with NPM
 
@@ -15,7 +15,7 @@ Install with NPM
 npm i sv-star-rating
 ```
 
-###Options
+##Options
 ***
 | Name  | Type | Description |
 | ------------- |:-------------:|------------|
@@ -30,7 +30,7 @@ npm i sv-star-rating
 | innerOuterRadiusRatio      | number  |------------|
 
 
-###Usage
+##Usage
 
 Import SvStarRatingModule in your app
 
@@ -48,7 +48,7 @@ export class AppModule { }
 ```
 ***
 
-###Example
+##Example
 ```html
 <sv-star-rating
   margin="10px"
@@ -63,7 +63,7 @@ export class AppModule { }
 </sv-star-rating>
 ```
 
-###Author
+##Author
 [Mehdi Sadeghian](https://github.com/sadeghianme)
 [Samira Vahidi](https://github.com/svahidi)
 
