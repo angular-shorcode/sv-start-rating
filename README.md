@@ -3,11 +3,9 @@
   <h1 align="center">Angular Shortcode</h1>
 </p>
 
-
-[comment]: <> (![]&#40;https://angular-shortcode.web.app/assets/icons/logo-128.png&#41;)
-
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) 
 ___
+
 #SvStarRating
 
 ## Table of Contents
