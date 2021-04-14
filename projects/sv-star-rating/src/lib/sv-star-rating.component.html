@@ -1,0 +1,36 @@
+<div class="rating">
+  <div *ngFor="let star of ratingList; index as index"
+       class="rating-item"
+       [ngClass]="!(disabled && readonly) ? 'hover' : null"
+       [style.margin]="margin"
+       [style.opacity]="disabled ? '0.7' : null"
+       [style.cursor]="disabled || readonly ? 'default' : null"
+       (mouseenter)="hoverRating(star)"
+       (mouseleave)="exitRating()"
+       (click)="clickRating(star)">
+    <svg [id]="'rating-' + star.starId"
+         [ngStyle]="{'width': size, 'height': size, 'overflow': 'overlay'}">
+      <ng-container *ngIf="hwPoints">
+        <ng-container *ngIf="!hover">
+          <polygon [attr.points]="starPoints"
+                   [attr.fill]="'url(#gradient' + star.starId + ')'"/>
+          <defs>
+            <linearGradient [attr.id]="'gradient' + star.starId">
+              <stop offset="0%" stop-opacity="1" [attr.stop-color]="activeBgColor"></stop>
+              <stop [attr.offset]="star.percentage" stop-opacity="1" [attr.stop-color]="activeBgColor"></stop>
+              <stop [attr.offset]="star.percentage" stop-opacity="1" [attr.stop-color]="bgColor"></stop>
+              <stop offset="100%" stop-opacity="1" [attr.stop-color]="bgColor"></stop>
+            </linearGradient>
+          </defs>
+        </ng-container>
+        <ng-container *ngIf="hover" >
+          <polygon [attr.points]="starPoints"
+                   style="fill-rule:nonzero" [style.fill]="bgColor" />
+          <polygon *ngIf="star.selected"
+                   [attr.points]="starPoints"
+                   style="fill-rule:nonzero" [style.fill]="activeBgColor" />
+        </ng-container>
+      </ng-container>
+    </svg>
+  </div>
+</div>

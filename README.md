@@ -1,27 +1,73 @@
 # SvStarRating
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
-## Development server
+###Demo
+http://localhost:4200/home/rating
+###Installation 
+***
+Install with NPM
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> npm i sv-star-rating
+>>>
+```bash
+npm i sv-star-rating
+```
 
-## Code scaffolding
+###Options
+***
+| Name  | Type | Description |
+| ------------- |:-------------:|------------|
+| margin      | string     |------------|
+| bgColor     | string     |------------|
+| activeBgColor      | string     |------------|
+| size      | string     |------------|
+| value      | string / number    |------------|
+| readonly      | boolean    |------------|
+| disabled      | boolean    |------------|
+| radiusRatio      | number     |------------|
+| innerOuterRadiusRatio      | number  |------------|
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+###Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Import SvStarRatingModule in your app
 
-## Running unit tests
+```typescript
+import { SvStarRatingModule } from 'sv-star-rating';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  imports: [
+    ...
+    SvStarRatingModule
+  ],
+  ...
+})
+export class AppModule { }
+```
+***
 
-## Running end-to-end tests
+###Example
+```html
+<sv-star-rating
+  margin="10px"
+  bgColor="#a83838"
+  activeBgColor="#2fc15b"
+  size="40px"
+  [(value)]="value"
+  [readonly]="false"
+  [disabled]="false"
+  [radiusRatio]="40"
+  [innerOuterRadiusRatio]="2">
+</sv-star-rating>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+###Author
+[Mehdi Sadeghian](https://github.com/sadeghianme)
+[Samira Vahidi](https://github.com/svahidi)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+

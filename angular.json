@@ -1,7 +1,51 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "8a9e28d3-69c2-4419-934f-9d46b7c994ba"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "sv-star-rating": {
+      "projectType": "library",
+      "root": "projects/sv-star-rating",
+      "sourceRoot": "projects/sv-star-rating/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/sv-star-rating/tsconfig.lib.json",
+            "project": "projects/sv-star-rating/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sv-star-rating/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sv-star-rating/src/test.ts",
+            "tsConfig": "projects/sv-star-rating/tsconfig.spec.json",
+            "karmaConfig": "projects/sv-star-rating/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sv-star-rating/tsconfig.lib.json",
+              "projects/sv-star-rating/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "sv-star-rating"
 }

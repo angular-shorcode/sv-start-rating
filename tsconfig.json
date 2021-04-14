@@ -16,6 +16,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "paths": {
+      "sv-star-rating": [
+        "dist/sv-star-rating/sv-star-rating",
+        "dist/sv-star-rating"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"

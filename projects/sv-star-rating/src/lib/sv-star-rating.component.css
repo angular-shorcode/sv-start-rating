@@ -1,0 +1,16 @@
+.rating {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-item-hover:hover {
+  transform: scale(1.1);
+}
