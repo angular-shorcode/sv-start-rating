@@ -1,4 +1,5 @@
 #angular-shortcode
+
 ##SvStarRating
 ![](https://angular-shortcode.web.app/assets/icons/logo-128.png)
 
@@ -6,7 +7,9 @@
 
 
 ###Demo
+
 ✨ https://angular-shortcode.web.app/home/rating ✨
+
 ###Installation 
 ***
 Install with NPM
@@ -14,6 +17,7 @@ Install with NPM
 ```bash
 npm i sv-star-rating
 ```
+
 ###Options
 ***
 
@@ -29,6 +33,7 @@ npm i sv-star-rating
 | radiusRatio           | number          | 16             |
 | innerOuterRadiusRatio | number          | 4              |
 | @Output() valueChange | number          |                |
+
 ###Usage
 ***
 
@@ -62,9 +67,11 @@ export class AppModule { }
   [innerOuterRadiusRatio]="2">
 </sv-star-rating>
 ```
+
 ###Author
 ***
 `Mehdi Sadeghian` `Samira Vahidi`
+
 ###Contact
 ***
  `github`
