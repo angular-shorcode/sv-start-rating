@@ -31,9 +31,9 @@ export class SvStarRatingComponent implements OnChanges, AfterViewInit {
   @Input() radiusRatio = 40;              // Svg radius
   @Input() activeBgColor = 'gold';
   @Input() innerOuterRadiusRatio = 2;     // Out/Inner radius ratio -> make stars thin or thick
-  @Output() valueChange = new EventEmitter();
+  @Output() valueChange = new EventEmitter<number>();
   hover = false;
-  hwPoints = 0;                          // height and widths of svg
+  hwPoints = 0;                           // height and widths of svg
   innerRadius = 0;
   outerRadius = 0;
   ratingList: RateObj[] = [

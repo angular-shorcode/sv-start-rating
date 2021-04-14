@@ -1,36 +1,36 @@
-# SvStarRating
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![]
+#angular-shortcode
+##SvStarRating
+![](https://angular-shortcode.web.app/assets/icons/logo-128.png)
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) 
 
 
-##Demo
-http://localhost:4200/home/rating
-##Installation 
+###Demo
+✨ https://angular-shortcode.web.app/home/rating ✨
+###Installation 
 ***
 Install with NPM
 
-> npm i sv-star-rating
->>>
 ```bash
 npm i sv-star-rating
 ```
-
-##Options
+###Options
 ***
-| Name  | Type | Description |
-| ------------- |:-------------:|------------|
-| margin      | string     |------------|
-| bgColor     | string     |------------|
-| activeBgColor      | string     |------------|
-| size      | string     |------------|
-| value      | string / number    |------------|
-| readonly      | boolean    |------------|
-| disabled      | boolean    |------------|
-| radiusRatio      | number     |------------|
-| innerOuterRadiusRatio      | number  |------------|
 
-
-##Usage
+| Name                  | Type            | Default Value  |Description |
+| --------------------- |:---------------:|:--------------:|------------|
+| margin                | string          | 2px            |
+| bgColor               | string          | #9c9c9c        |
+| activeBgColor         | string          | gold           |
+| size                  | string          | 40px           |
+| value                 | string / number | 2              |
+| readonly              | boolean         | false          |
+| disabled              | boolean         | false          |
+| radiusRatio           | number          | 16             |
+| innerOuterRadiusRatio | number          | 4              |
+| @Output() valueChange | number          |                |
+###Usage
+***
 
 Import SvStarRatingModule in your app
 
@@ -46,9 +46,9 @@ import { SvStarRatingModule } from 'sv-star-rating';
 })
 export class AppModule { }
 ```
-***
 
 ##Example
+***
 ```html
 <sv-star-rating
   margin="10px"
@@ -62,11 +62,21 @@ export class AppModule { }
   [innerOuterRadiusRatio]="2">
 </sv-star-rating>
 ```
+###Author
+***
+`Mehdi Sadeghian` `Samira Vahidi`
+###Contact
+***
+ `github`
+   - [Angular Shortcode](https://github.com/angular-shorcode/)
+   - [Mehdi Sadeghian](https://github.com/sadeghianme)
+   - [Samira Vahidi](https://github.com/svahidi)
 
-##Author
-[Mehdi Sadeghian](https://github.com/sadeghianme)
-[Samira Vahidi](https://github.com/svahidi)
+  `linedIn`
+   - [Mehdi Sadeghian](https://linkedin.com/in/mehdi-sadeghian-864912a5)
+   - [Samira Vahidi](https://www.linkedin.com/in/samira-vahidi-2368856b)
 
+  `twitter`
 
 
 
