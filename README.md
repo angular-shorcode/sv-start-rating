@@ -1,16 +1,35 @@
-#angular-shortcode
+<p align="center">
+  <img style="text-align: center" src="https://angular-shortcode.web.app/assets/icons/logo-128.png">
+  <h1 align="center">Angular Shortcode</h1>
+</p>
 
-##SvStarRating
-![](https://angular-shortcode.web.app/assets/icons/logo-128.png)
+[comment]: <> (![]&#40;https://angular-shortcode.web.app/assets/icons/logo-128.png&#41;)
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) 
 
+#SvStarRating
 
-###Demo
+## Table of Contents
+
+- [Live Demo](#demo) | [Stackblitz](#demo)
+- [Installation](#installation)
+- [Options](#options)
+- [Usage](#usage)
+- [Example](#example)
+- [Author](#author)
+- [Contact](#conatact)
+
+
+<a name="demo"/>
+
+##Demo
 
 ✨ https://angular-shortcode.web.app/home/rating ✨
 
-###Installation 
+
+<a name="installation"/>
+
+##Installation 
 ***
 Install with NPM
 
@@ -18,7 +37,10 @@ Install with NPM
 npm i sv-star-rating
 ```
 
-###Options
+
+<a name="options"/>
+
+##Options
 ***
 
 | Name                  | Type            | Default Value  |Description |
@@ -34,7 +56,10 @@ npm i sv-star-rating
 | innerOuterRadiusRatio | number          | 4              |
 | @Output() valueChange | number          |                |
 
-###Usage
+
+<a name="usage"/>
+
+##Usage
 ***
 
 Import SvStarRatingModule in your app
@@ -52,6 +77,8 @@ import { SvStarRatingModule } from 'sv-star-rating';
 export class AppModule { }
 ```
 
+<a name="example"/>
+
 ##Example
 ***
 ```html
@@ -68,9 +95,14 @@ export class AppModule { }
 </sv-star-rating>
 ```
 
+<a name="auther"/>
+
 ###Author
 ***
 `Mehdi Sadeghian` `Samira Vahidi`
+
+
+<a name="conatact"/>
 
 ###Contact
 ***
