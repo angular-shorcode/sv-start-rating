@@ -1,12 +1,13 @@
 <p align="center">
-  <img style="text-align: center" src="https://angular-shortcode.web.app/assets/icons/logo-128.png">
+  <img style="text-align: center" src="https://angular-shortcode.web.app/assets/icons/logo-128.png"/>
   <h1 align="center">Angular Shortcode</h1>
 </p>
+
 
 [comment]: <> (![]&#40;https://angular-shortcode.web.app/assets/icons/logo-128.png&#41;)
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) 
-
+___
 #SvStarRating
 
 ## Table of Contents
@@ -97,14 +98,14 @@ export class AppModule { }
 
 <a name="auther"/>
 
-###Author
+##Author
 ***
 `Mehdi Sadeghian` `Samira Vahidi`
 
 
 <a name="conatact"/>
 
-###Contact
+##Contact
 ***
  `github`
    - [Angular Shortcode](https://github.com/angular-shorcode/)
