@@ -3,7 +3,6 @@ import { SvStarRatingComponent } from './sv-star-rating.component';
 import {CommonModule} from '@angular/common';
 
 
-
 @NgModule({
   declarations: [
     SvStarRatingComponent

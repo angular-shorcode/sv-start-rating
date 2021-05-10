@@ -3,8 +3,8 @@
   <h1 align="center">Angular Shortcode</h1>
 </p>
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) 
-___
+![](https://img.shields.io/github/stars/pandao/editor.md.svg)
+
 
 #SvStarRating
 
@@ -22,13 +22,16 @@ ___
 <a name="demo"/>
 
 ##Demo
+***
 
-✨ https://angular-shortcode.web.app/home/rating ✨
+✨ [Angular Shortcode](https://angular-shortcode.web.app/home/rating) ✨
+
+✨ [Stackblitz](https://stackblitz.com/edit/svstarrating?file=src/app/app.component.ts) ✨
 
 
 <a name="installation"/>
 
-##Installation 
+##Installation
 ***
 Install with NPM
 
@@ -82,15 +85,16 @@ export class AppModule { }
 ***
 ```html
 <sv-star-rating
-  margin="10px"
-  bgColor="#a83838"
-  activeBgColor="#2fc15b"
   size="40px"
+  margin="10px"
+  bgColor="gray"
+  activeBgColor="gold"
   [(value)]="value"
   [readonly]="false"
   [disabled]="false"
   [radiusRatio]="40"
-  [innerOuterRadiusRatio]="2">
+  [innerOuterRadiusRatio]="2"
+  (valueChange)="valueChange($event)">
 </sv-star-rating>
 ```
 
@@ -105,16 +109,16 @@ export class AppModule { }
 
 ##Contact
 ***
- `github`
-   - [Angular Shortcode](https://github.com/angular-shorcode/)
-   - [Mehdi Sadeghian](https://github.com/sadeghianme)
-   - [Samira Vahidi](https://github.com/svahidi)
+`github`
+- [Angular Shortcode](https://github.com/angular-shortcode)
+- [Mehdi Sadeghian](https://github.com/sadeghianme)
+- [Samira Vahidi](https://github.com/svahidi)
 
-  `linedIn`
-   - [Mehdi Sadeghian](https://linkedin.com/in/mehdi-sadeghian-864912a5)
-   - [Samira Vahidi](https://www.linkedin.com/in/samira-vahidi-2368856b)
+`linedIn`
+- [Mehdi Sadeghian](https://linkedin.com/in/mehdi-sadeghian-864912a5)
+- [Samira Vahidi](https://www.linkedin.com/in/samira-vahidi-2368856b)
 
-  `twitter`
+`twitter`
 
 
 

@@ -1,12 +1,10 @@
 import {
-  ChangeDetectorRef,
   Component,
   EventEmitter,
-  SimpleChanges,
   Input,
   Output,
-  OnChanges,
-  AfterViewInit,
+  ChangeDetectorRef,
+  OnChanges, SimpleChanges, ViewChildren, ElementRef, QueryList, AfterViewChecked
 } from '@angular/core';
 
 interface RateObj {
@@ -15,23 +13,23 @@ interface RateObj {
   percentage: string;
   starId: string;
 }
-
 @Component({
   selector: 'sv-star-rating',
   templateUrl: 'sv-star-rating.component.html',
   styleUrls: ['./sv-star-rating.component.css']
 })
-export class SvStarRatingComponent implements OnChanges, AfterViewInit {
+export class SvStarRatingComponent implements OnChanges, AfterViewChecked {
   @Input() size = '40px';                 // height and widths of div of svg
   @Input() value: string | number = 2;
   @Input() margin = '2px';                // height and widths of div of svg
   @Input() bgColor = '#9c9c9c';
   @Input() disabled = false;
   @Input() readonly = false;
-  @Input() radiusRatio = 40;              // Svg radius
+  @Input() radiusRatio = 16;              // Svg radius
   @Input() activeBgColor = 'gold';
-  @Input() innerOuterRadiusRatio = 2;     // Out/Inner radius ratio -> make stars thin or thick
+  @Input() innerOuterRadiusRatio = 4;     // Out/Inner radius ratio -> make stars thin or thick
   @Output() valueChange = new EventEmitter<number>();
+  @ViewChildren('starElm') starElem: QueryList<ElementRef> | any;
   hover = false;
   hwPoints = 0;                           // height and widths of svg
   innerRadius = 0;
@@ -60,8 +58,8 @@ export class SvStarRatingComponent implements OnChanges, AfterViewInit {
     }
   }
 
-  ngAfterViewInit(): void {
-    this.hwPoints = document.getElementById('rating-' + this.ratingList[0].starId)?.clientHeight || 0;
+  ngAfterViewChecked(): void {
+    this.hwPoints = this.starElem.toArray()[0].nativeElement.clientHeight;
     this.cdr.detectChanges();
   }
 
