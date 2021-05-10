@@ -6,7 +6,7 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg)
 
 
-#SvStarRating
+# SvStarRating
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 <a name="demo"/>
 
-##Demo
+## Demo
 ***
 
 ✨ [Angular Shortcode](https://angular-shortcode.web.app/home/rating) ✨
@@ -31,7 +31,7 @@
 
 <a name="installation"/>
 
-##Installation
+## Installation
 ***
 Install with NPM
 
@@ -42,7 +42,7 @@ npm i sv-star-rating
 
 <a name="options"/>
 
-##Options
+## Options
 ***
 
 | Name                  | Type            | Default Value  |Description |
@@ -61,7 +61,7 @@ npm i sv-star-rating
 
 <a name="usage"/>
 
-##Usage
+## Usage
 ***
 
 Import SvStarRatingModule in your app
@@ -81,7 +81,7 @@ export class AppModule { }
 
 <a name="example"/>
 
-##Example
+## Example
 ***
 ```html
 <sv-star-rating
@@ -100,14 +100,14 @@ export class AppModule { }
 
 <a name="auther"/>
 
-##Author
+## Author
 ***
 `Mehdi Sadeghian` `Samira Vahidi`
 
 
 <a name="conatact"/>
 
-##Contact
+## Contact
 ***
 `github`
 - [Angular Shortcode](https://github.com/angular-shortcode)
@@ -118,7 +118,7 @@ export class AppModule { }
 - [Mehdi Sadeghian](https://linkedin.com/in/mehdi-sadeghian-864912a5)
 - [Samira Vahidi](https://www.linkedin.com/in/samira-vahidi-2368856b)
 
-`twitter`
+[comment]: <> (`twitter`)
 
 
 
